@@ -21,7 +21,7 @@ Bmid = kk.getProfile().mid
 Cmid = kc.getProfile().mid
 
 Bots=[mid,Amid,Bmid,Cmid]
-admin=[""]
+admin=["u0e495c4debaa244e5f61f4e090950f75"]
 wait = {
     'contact':True,
     'autoJoin':True,
@@ -86,7 +86,7 @@ def bot(op):
             return
         if op.type == 13:
             cl.acceptGroupInvitation(op.param1)
-            cl.sendText(op.param1, "Makasih :D")
+            cl.sendText(op.param1, "HAI SALAM KENAL:)")
         if op.type == 17:
             kk.kickoutFromGroup(op.param1,[op.param2])
             print "Ada Member Masuk ke Grup"
@@ -153,7 +153,7 @@ def bot(op):
             msg = op.message
 
 #-----------------------------[KICK ALL]-----------------------------#
-            if "Makasih :D" in msg.text:
+            if "HAI SALAM KENAL:)" in msg.text:
                 if msg.toType == 2:
                     print "ok"
                     _name = msg.text.replace("Makasih :D","")
